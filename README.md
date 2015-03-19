@@ -11,6 +11,8 @@ See `/examples` folder. But basically:
 
 ```js
 
+var radclient = require('radclient');
+
 // Sample Access-Request packet
 
 var packet = {
