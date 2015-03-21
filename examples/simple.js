@@ -8,7 +8,7 @@ var colors = require('colors');
 var path = require('path');
 
 function random(begin, end) {
-  return Math.floor(Math.random() * (end - begin + 1 ) + begin);
+  return Math.floor(Math.random() * (end - begin + 1) + begin);
 }
 
 // Sample Access-Request packet
@@ -18,16 +18,16 @@ var packet = {
   secret: 'd3ath$t@r_Rd',
   identifier: random(0, 255),
   attributes: [
-    ['NAS-IP-Address', '192.168.10.39'],
-    ['User-Name', 'utente'],
-    ['User-Password', 'uccellone231']
+    ['NAS-IP-Address', '192.168.1.10'],
+    ['User-Name', 'john'],
+    ['User-Password', 'doe']
   ]
 };
 
 // Options
 
 var options = {
-  host: '192.168.100.102',
+  host: '192.168.1.2',
   dictionaries: path.join(__dirname, '../dictionaries')
 };
 
